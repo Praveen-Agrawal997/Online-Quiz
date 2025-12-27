@@ -7,9 +7,9 @@ public class DBConnection {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/quiz_db",
+                "jdbc:mysql://yamabiko.proxy.rlwy.net:36466/railway?useSSL=false&allowPublicKeyRetrieval=true",
                 "root",
-                ""
+                "QcauDOZuTgXpocbGGGAYfsQdUyIXshyB"
             );
         } catch (Exception e) {
             e.printStackTrace();
@@ -17,3 +17,4 @@ public class DBConnection {
         return con;
     }
 }
+
